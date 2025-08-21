@@ -1,0 +1,72 @@
+{
+	"backtrace" : 0,
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : 
+		[
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"id" : "stkirrlicht::@147aa478c01a703f7012"
+		},
+		{
+			"id" : "angelscript::@37003902626309fe01f8"
+		},
+		{
+			"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df"
+		},
+		{
+			"id" : "graphics_utils::@3454a71879650300a7c8"
+		},
+		{
+			"id" : "mcpp::@bd8c96697c14f6e9cd2d"
+		},
+		{
+			"id" : "sheenbidi::@84886f4df5844e9385cc"
+		},
+		{
+			"id" : "graphics_engine::@2ecb3ec627efbe693073"
+		},
+		{
+			"id" : "tinygettext::@a67e9c806e73d488400d"
+		},
+		{
+			"id" : "bulletmath::@d53a414ede07fb337f93"
+		},
+		{
+			"id" : "bulletcollision::@d53a414ede07fb337f93"
+		},
+		{
+			"id" : "supertuxkart::@6890427a1f51a3e7e1df"
+		},
+		{
+			"id" : "squish::@c33fa90629265cecbab7"
+		},
+		{
+			"id" : "bulletdynamics::@d53a414ede07fb337f93"
+		},
+		{
+			"id" : "enet::@d7c883207b9d340406f7"
+		}
+	],
+	"id" : "ALL_BUILD::@6890427a1f51a3e7e1df",
+	"isGeneratorProvided" : true,
+	"name" : "ALL_BUILD",
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	},
+	"sources" : [],
+	"type" : "UTILITY"
+}

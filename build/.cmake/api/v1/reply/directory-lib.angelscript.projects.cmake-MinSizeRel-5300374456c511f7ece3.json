@@ -1,0 +1,102 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"lib/angelscript/projects/cmake/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 218,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 225,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 248,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 253,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"lib/angelscript/projects/cmake/MinSizeRel/angelscript.lib"
+			],
+			"targetId" : "angelscript::@37003902626309fe01f8",
+			"targetIndex" : 5,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 2,
+			"component" : "Devel",
+			"destination" : "include",
+			"paths" : 
+			[
+				"lib/angelscript/projects/cmake/../../include/angelscript.h"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 3,
+			"component" : "Unspecified",
+			"destination" : "lib/cmake/Angelscript",
+			"exportName" : "AngelscriptTargets",
+			"exportTargets" : 
+			[
+				{
+					"id" : "angelscript::@37003902626309fe01f8",
+					"index" : 5
+				}
+			],
+			"paths" : 
+			[
+				"lib/angelscript/projects/cmake/CMakeFiles/Export/7d8cbdd81f211f8a933f4e480fe3726f/AngelscriptTargets.cmake"
+			],
+			"type" : "export"
+		},
+		{
+			"backtrace" : 4,
+			"component" : "Devel",
+			"destination" : "lib/cmake/Angelscript",
+			"paths" : 
+			[
+				"lib/angelscript/projects/cmake/cmake/AngelscriptConfig.cmake",
+				"build/lib/angelscript/projects/cmake/Angelscript/AngelscriptConfigVersion.cmake"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "lib/angelscript/projects/cmake",
+		"source" : "lib/angelscript/projects/cmake"
+	}
+}

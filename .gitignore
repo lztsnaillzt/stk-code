@@ -1,8 +1,9 @@
 bld*/
-build*/
+#build*/
+build/supertuxkart.dir/Debug
 cmake_build*/
 xcode_build*/
-dependencies*/
+#dependencies*/
 CMakeFiles/
 stk-editor/
 .vscode/
