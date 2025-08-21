@@ -20,6 +20,7 @@
 
 #include "config/user_config.hpp"
 #include "graphics/camera_fps.hpp"
+#include "graphics/camera.hpp"
 #include "graphics/irr_driver.hpp"
 #include "graphics/shader_based_renderer.hpp"
 #include "graphics/sp/sp_base.hpp"
@@ -405,6 +406,41 @@ void InputManager::handleStaticAction(int key, int value)
                 {
                     UserConfigParams::m_display_fps =
                     !UserConfigParams::m_display_fps;
+                }
+            }
+            break;
+        }
+        case IRR_KEY_F10:
+        {
+            // 切换相机到下一辆 AI 车辆（仅按下时触发）
+            if (value)
+            {
+                World* w = World::getWorld();
+                if (!w) break;
+                // 仅操作第一个视口的相机（单人/主视角）
+                if (Camera::getNumCameras() == 0) break;
+                Camera* cam = Camera::getCamera(0);
+                AbstractKart* current = cam ? cam->getKart() : nullptr;
+
+                unsigned int n = w->getNumKarts();
+                if (n == 0) break;
+
+                // 从当前 kart 的世界 ID 之后开始找下一辆 AI
+                int start = -1;
+                if (current)
+                {
+                    start = (int)current->getWorldKartId();
+                }
+
+                for (unsigned int step = 1; step <= n; ++step)
+                {
+                    unsigned int idx = (unsigned int)((start + step) % (int)n);
+                    AbstractKart* k = w->getKart(idx);
+                    if (k)
+                    {
+                        cam->setKart(k);
+                        break;
+                    }
                 }
             }
             break;
