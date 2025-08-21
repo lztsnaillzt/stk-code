@@ -35,6 +35,8 @@
 #include "utils/string_utils.hpp"
 #include "utils/translation.hpp"
 
+#include <SKeyMap.h>
+
 #define INPUT_MODE_DEBUG 0
 
 static const char  INPUT_FILE_NAME[]  = "input.xml";
@@ -82,6 +84,10 @@ bool DeviceManager::initialize()
         
         created = true;
     }
+
+    // Keep only the default keyboard config; WASD support is handled by
+    // aliasing keys in the input processing path to avoid multiple keyboard
+    // devices or complex binding changes.
 
     const int keyboard_amount = m_keyboard_configs.size();
     for (int n = 0; n < keyboard_amount; n++)
@@ -269,6 +275,16 @@ InputDevice* DeviceManager::mapKeyboardInput(int button_id,
                                              StateManager::ActivePlayer **player,
                                              PlayerAction *action /* out */)
 {
+    // Allow WASD as aliases for Arrow keys
+    switch (button_id)
+    {
+        case IRR_KEY_W: button_id = IRR_KEY_UP;    break;
+        case IRR_KEY_S: button_id = IRR_KEY_DOWN;  break;
+        case IRR_KEY_A: button_id = IRR_KEY_LEFT;  break;
+        case IRR_KEY_D: button_id = IRR_KEY_RIGHT; break;
+        default: break;
+    }
+
     const int keyboard_amount = m_keyboards.size();
 
     for (int n=0; n<keyboard_amount; n++)
