@@ -1,4 +1,4 @@
-# Install script for directory: D:/Work/Kart/SuperTuxKart-dev/stk-code/lib/libsquish
+# Install script for directory: F:/Work/SuperTuxKart/stk-code/lib/libsquish
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

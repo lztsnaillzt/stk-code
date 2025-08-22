@@ -7,7 +7,7 @@ if(CMAKE_VERSION VERSION_LESS "2.8.3")
    message(FATAL_ERROR "CMake >= 2.8.3 required")
 endif()
 cmake_policy(PUSH)
-cmake_policy(VERSION 2.8.3...3.24)
+cmake_policy(VERSION 2.8.3...3.28)
 #----------------------------------------------------------------
 # Generated CMake target import file.
 #----------------------------------------------------------------
@@ -57,28 +57,28 @@ set_target_properties(Angelscript::angelscript PROPERTIES
 set_property(TARGET Angelscript::angelscript APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(Angelscript::angelscript PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "ASM_MASM;CXX"
-  IMPORTED_LOCATION_DEBUG "D:/Work/Kart/SuperTuxKart-dev/stk-code/build/lib/angelscript/projects/cmake/Debug/angelscriptd.lib"
+  IMPORTED_LOCATION_DEBUG "F:/Work/SuperTuxKart/stk-code/build/lib/angelscript/projects/cmake/Debug/angelscriptd.lib"
   )
 
 # Import target "Angelscript::angelscript" for configuration "Release"
 set_property(TARGET Angelscript::angelscript APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
 set_target_properties(Angelscript::angelscript PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "ASM_MASM;CXX"
-  IMPORTED_LOCATION_RELEASE "D:/Work/Kart/SuperTuxKart-dev/stk-code/build/lib/angelscript/projects/cmake/Release/angelscript.lib"
+  IMPORTED_LOCATION_RELEASE "F:/Work/SuperTuxKart/stk-code/build/lib/angelscript/projects/cmake/Release/angelscript.lib"
   )
 
 # Import target "Angelscript::angelscript" for configuration "MinSizeRel"
 set_property(TARGET Angelscript::angelscript APPEND PROPERTY IMPORTED_CONFIGURATIONS MINSIZEREL)
 set_target_properties(Angelscript::angelscript PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_MINSIZEREL "ASM_MASM;CXX"
-  IMPORTED_LOCATION_MINSIZEREL "D:/Work/Kart/SuperTuxKart-dev/stk-code/build/lib/angelscript/projects/cmake/MinSizeRel/angelscript.lib"
+  IMPORTED_LOCATION_MINSIZEREL "F:/Work/SuperTuxKart/stk-code/build/lib/angelscript/projects/cmake/MinSizeRel/angelscript.lib"
   )
 
 # Import target "Angelscript::angelscript" for configuration "RelWithDebInfo"
 set_property(TARGET Angelscript::angelscript APPEND PROPERTY IMPORTED_CONFIGURATIONS RELWITHDEBINFO)
 set_target_properties(Angelscript::angelscript PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_RELWITHDEBINFO "ASM_MASM;CXX"
-  IMPORTED_LOCATION_RELWITHDEBINFO "D:/Work/Kart/SuperTuxKart-dev/stk-code/build/lib/angelscript/projects/cmake/RelWithDebInfo/angelscript.lib"
+  IMPORTED_LOCATION_RELWITHDEBINFO "F:/Work/SuperTuxKart/stk-code/build/lib/angelscript/projects/cmake/RelWithDebInfo/angelscript.lib"
   )
 
 # This file does not depend on other imported targets which have

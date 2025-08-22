@@ -1,4 +1,4 @@
-# Install script for directory: D:/Work/Kart/SuperTuxKart-dev/stk-code/lib/graphics_utils
+# Install script for directory: F:/Work/SuperTuxKart/stk-code/lib/graphics_utils
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

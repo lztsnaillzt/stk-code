@@ -1,4 +1,4 @@
-# Install script for directory: D:/Work/Kart/SuperTuxKart-dev/stk-code
+# Install script for directory: F:/Work/SuperTuxKart/stk-code
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,86 +34,94 @@ endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   if(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Dd][Ee][Bb][Uu][Gg])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "D:/Work/Kart/SuperTuxKart-dev/stk-code/build/bin/Debug/supertuxkart.exe")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "F:/Work/SuperTuxKart/stk-code/build/bin/Debug/supertuxkart.exe")
   elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "D:/Work/Kart/SuperTuxKart-dev/stk-code/build/bin/Release/supertuxkart.exe")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "F:/Work/SuperTuxKart/stk-code/build/bin/Release/supertuxkart.exe")
   elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Mm][Ii][Nn][Ss][Ii][Zz][Ee][Rr][Ee][Ll])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "D:/Work/Kart/SuperTuxKart-dev/stk-code/build/bin/MinSizeRel/supertuxkart.exe")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "F:/Work/SuperTuxKart/stk-code/build/bin/MinSizeRel/supertuxkart.exe")
   elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ww][Ii][Tt][Hh][Dd][Ee][Bb][Ii][Nn][Ff][Oo])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "D:/Work/Kart/SuperTuxKart-dev/stk-code/build/bin/RelWithDebInfo/supertuxkart.exe")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "F:/Work/SuperTuxKart/stk-code/build/bin/RelWithDebInfo/supertuxkart.exe")
   endif()
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/supertuxkart" TYPE DIRECTORY FILES "D:/Work/Kart/SuperTuxKart-dev/stk-code/data" REGEX "/\\.svn$" EXCLUDE REGEX "/\\.git$" EXCLUDE)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/supertuxkart" TYPE DIRECTORY FILES "F:/Work/SuperTuxKart/stk-code/data" REGEX "/\\.svn$" EXCLUDE REGEX "/\\.git$" EXCLUDE)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/supertuxkart/data" TYPE DIRECTORY FILES "D:/Work/Kart/SuperTuxKart-dev/stk-code/../stk-assets/" REGEX "/\\.svn$" EXCLUDE REGEX "/\\.git$" EXCLUDE)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/supertuxkart/data" TYPE DIRECTORY FILES "F:/Work/SuperTuxKart/stk-code/../stk-assets/" REGEX "/\\.svn$" EXCLUDE REGEX "/\\.git$" EXCLUDE)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/applications" TYPE FILE FILES "D:/Work/Kart/SuperTuxKart-dev/stk-code/data/supertuxkart.desktop")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/applications" TYPE FILE FILES "F:/Work/SuperTuxKart/stk-code/data/supertuxkart.desktop")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/icons/hicolor/16x16/apps" TYPE FILE RENAME "supertuxkart.png" FILES "D:/Work/Kart/SuperTuxKart-dev/stk-code/data/supertuxkart_16.png")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/icons/hicolor/16x16/apps" TYPE FILE RENAME "supertuxkart.png" FILES "F:/Work/SuperTuxKart/stk-code/data/supertuxkart_16.png")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/icons/hicolor/32x32/apps" TYPE FILE RENAME "supertuxkart.png" FILES "D:/Work/Kart/SuperTuxKart-dev/stk-code/data/supertuxkart_32.png")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/icons/hicolor/32x32/apps" TYPE FILE RENAME "supertuxkart.png" FILES "F:/Work/SuperTuxKart/stk-code/data/supertuxkart_32.png")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/icons/hicolor/48x48/apps" TYPE FILE RENAME "supertuxkart.png" FILES "D:/Work/Kart/SuperTuxKart-dev/stk-code/data/supertuxkart_48.png")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/icons/hicolor/48x48/apps" TYPE FILE RENAME "supertuxkart.png" FILES "F:/Work/SuperTuxKart/stk-code/data/supertuxkart_48.png")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/icons/hicolor/64x64/apps" TYPE FILE RENAME "supertuxkart.png" FILES "D:/Work/Kart/SuperTuxKart-dev/stk-code/data/supertuxkart_64.png")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/icons/hicolor/64x64/apps" TYPE FILE RENAME "supertuxkart.png" FILES "F:/Work/SuperTuxKart/stk-code/data/supertuxkart_64.png")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/icons/hicolor/128x128/apps" TYPE FILE RENAME "supertuxkart.png" FILES "D:/Work/Kart/SuperTuxKart-dev/stk-code/data/supertuxkart_128.png")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/icons/hicolor/128x128/apps" TYPE FILE RENAME "supertuxkart.png" FILES "F:/Work/SuperTuxKart/stk-code/data/supertuxkart_128.png")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/icons/hicolor/256x256/apps" TYPE FILE RENAME "supertuxkart.png" FILES "D:/Work/Kart/SuperTuxKart-dev/stk-code/data/supertuxkart_256.png")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/icons/hicolor/256x256/apps" TYPE FILE RENAME "supertuxkart.png" FILES "F:/Work/SuperTuxKart/stk-code/data/supertuxkart_256.png")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/icons/hicolor/512x512/apps" TYPE FILE RENAME "supertuxkart.png" FILES "D:/Work/Kart/SuperTuxKart-dev/stk-code/data/supertuxkart_512.png")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/icons/hicolor/512x512/apps" TYPE FILE RENAME "supertuxkart.png" FILES "F:/Work/SuperTuxKart/stk-code/data/supertuxkart_512.png")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/icons/hicolor/1024x1024/apps" TYPE FILE RENAME "supertuxkart.png" FILES "D:/Work/Kart/SuperTuxKart-dev/stk-code/data/supertuxkart_1024.png")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/icons/hicolor/1024x1024/apps" TYPE FILE RENAME "supertuxkart.png" FILES "F:/Work/SuperTuxKart/stk-code/data/supertuxkart_1024.png")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/metainfo" TYPE FILE FILES "D:/Work/Kart/SuperTuxKart-dev/stk-code/data/supertuxkart.appdata.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/metainfo" TYPE FILE FILES "F:/Work/SuperTuxKart/stk-code/data/supertuxkart.appdata.xml")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("D:/Work/Kart/SuperTuxKart-dev/stk-code/build/lib/bullet/cmake_install.cmake")
-  include("D:/Work/Kart/SuperTuxKart-dev/stk-code/build/lib/enet/cmake_install.cmake")
-  include("D:/Work/Kart/SuperTuxKart-dev/stk-code/build/lib/libsquish/cmake_install.cmake")
-  include("D:/Work/Kart/SuperTuxKart-dev/stk-code/build/lib/graphics_engine/cmake_install.cmake")
-  include("D:/Work/Kart/SuperTuxKart-dev/stk-code/build/lib/graphics_utils/cmake_install.cmake")
-  include("D:/Work/Kart/SuperTuxKart-dev/stk-code/build/lib/tinygettext/cmake_install.cmake")
-  include("D:/Work/Kart/SuperTuxKart-dev/stk-code/build/lib/mcpp/cmake_install.cmake")
-  include("D:/Work/Kart/SuperTuxKart-dev/stk-code/build/lib/irrlicht/cmake_install.cmake")
-  include("D:/Work/Kart/SuperTuxKart-dev/stk-code/build/lib/angelscript/projects/cmake/cmake_install.cmake")
-  include("D:/Work/Kart/SuperTuxKart-dev/stk-code/build/lib/sheenbidi/cmake_install.cmake")
+  include("F:/Work/SuperTuxKart/stk-code/build/lib/bullet/cmake_install.cmake")
+  include("F:/Work/SuperTuxKart/stk-code/build/lib/enet/cmake_install.cmake")
+  include("F:/Work/SuperTuxKart/stk-code/build/lib/libsquish/cmake_install.cmake")
+  include("F:/Work/SuperTuxKart/stk-code/build/lib/graphics_engine/cmake_install.cmake")
+  include("F:/Work/SuperTuxKart/stk-code/build/lib/graphics_utils/cmake_install.cmake")
+  include("F:/Work/SuperTuxKart/stk-code/build/lib/tinygettext/cmake_install.cmake")
+  include("F:/Work/SuperTuxKart/stk-code/build/lib/mcpp/cmake_install.cmake")
+  include("F:/Work/SuperTuxKart/stk-code/build/lib/irrlicht/cmake_install.cmake")
+  include("F:/Work/SuperTuxKart/stk-code/build/lib/angelscript/projects/cmake/cmake_install.cmake")
+  include("F:/Work/SuperTuxKart/stk-code/build/lib/sheenbidi/cmake_install.cmake")
 
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
-  set(CMAKE_INSTALL_MANIFEST "install_manifest_${CMAKE_INSTALL_COMPONENT}.txt")
+  if(CMAKE_INSTALL_COMPONENT MATCHES "^[a-zA-Z0-9_.+-]+$")
+    set(CMAKE_INSTALL_MANIFEST "install_manifest_${CMAKE_INSTALL_COMPONENT}.txt")
+  else()
+    string(MD5 CMAKE_INST_COMP_HASH "${CMAKE_INSTALL_COMPONENT}")
+    set(CMAKE_INSTALL_MANIFEST "install_manifest_${CMAKE_INST_COMP_HASH}.txt")
+    unset(CMAKE_INST_COMP_HASH)
+  endif()
 else()
   set(CMAKE_INSTALL_MANIFEST "install_manifest.txt")
 endif()
 
-string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "D:/Work/Kart/SuperTuxKart-dev/stk-code/build/${CMAKE_INSTALL_MANIFEST}"
+  file(WRITE "F:/Work/SuperTuxKart/stk-code/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
+endif()
