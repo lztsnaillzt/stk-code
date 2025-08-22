@@ -206,6 +206,53 @@ const irr::core::stringw& SkiddingAI::getNamePostfix() const
 }   // getNamePostfix
 
 //-----------------------------------------------------------------------------
+irr::core::stringw SkiddingAI::getDebugInfo() const
+{
+    // Important, short AI decision snapshot
+    irr::core::stringw s;
+    s += L"AI "; s += getNamePostfix(); s += L"\n";
+    s += L"steer="; s += irr::core::stringw((int)(m_controls->getSteer()*100)); s += L"% ";
+    s += L"accel="; s += irr::core::stringw((int)(m_controls->getAccel()*100)); s += L"% ";
+    s += L"brk=";   s += irr::core::stringw(m_controls->getBrake()?L"1":L"0"); s += L" ";
+    s += L"nitro="; s += irr::core::stringw(m_controls->getNitro()?L"1":L"0");
+    s += L"\n";
+    // Current speed and estimated max safe speed for current curve
+    const float cur_v = m_kart->getSpeed();
+    float safe_v = 0.0f;
+    if (m_current_track_direction == DriveNode::DIR_LEFT ||
+        m_current_track_direction == DriveNode::DIR_RIGHT)
+    {
+        safe_v = m_kart->getSpeedForTurnRadius(std::max(1.0f, m_current_curve_radius));
+    }
+    else
+    {
+        safe_v = m_kart->getCurrentMaxSpeed();
+    }
+    s += L"v="; s += irr::core::stringw((int)cur_v); s += L" ";
+    s += L"vSafe="; s += irr::core::stringw((int)safe_v); s += L" ";
+    s += L"dir=";
+    switch (m_current_track_direction)
+    {
+        case DriveNode::DIR_LEFT:     s += L"L"; break;
+        case DriveNode::DIR_RIGHT:    s += L"R"; break;
+        case DriveNode::DIR_STRAIGHT: s += L"S"; break;
+        default:                      s += L"?"; break;
+    }
+    s += L" r="; s += irr::core::stringw((int)m_current_curve_radius);
+    // Current node and selected next node
+    if (m_track_node >= 0)
+    {
+        s += L" node="; s += irr::core::stringw((int)m_track_node);
+        if ((size_t)m_track_node < m_next_node_index.size())
+        {
+            int next = m_next_node_index[m_track_node];
+            s += L"->"; s += irr::core::stringw((int)next);
+        }
+    }
+    return s;
+}
+
+//-----------------------------------------------------------------------------
 /** Returns the pre-computed successor of a graph node.
  *  \param index The index of the graph node for which the successor
  *               is searched.
