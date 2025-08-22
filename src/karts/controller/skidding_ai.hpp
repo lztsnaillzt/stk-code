@@ -304,6 +304,7 @@ public:
     virtual void update      (int ticks);
     virtual void reset       ();
     virtual const irr::core::stringw& getNamePostfix() const;
+    virtual irr::core::stringw getDebugInfo() const OVERRIDE;
 };
 
 #endif

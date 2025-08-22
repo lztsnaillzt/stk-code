@@ -585,6 +585,26 @@ void RaceGUIBase::renderPlayerView(const Camera *camera, float dt)
     {
         m_multitouch_gui->draw(kart, viewport, scaling);
     }
+
+    // Draw AI debug info at top-left of this player view if the followed kart is AI
+    if (!GUIEngine::ModalDialog::isADialogActive())
+    {
+        const Controller* ctrl = kart->getController();
+        if (ctrl && !ctrl->isPlayerController())
+        {
+            irr::core::stringw info = ctrl->getDebugInfo();
+            if (info.size() != 0)
+            {
+                gui::IGUIFont* font = GUIEngine::getSmallFont();
+                const int margin = 8;
+                core::rect<s32> pos(viewport.UpperLeftCorner.X + margin,
+                                     viewport.UpperLeftCorner.Y + margin,
+                                     viewport.UpperLeftCorner.X + viewport.getWidth()/2,
+                                     viewport.UpperLeftCorner.Y + viewport.getHeight()/2);
+                font->draw(info.c_str(), pos, video::SColor(255, 255, 255, 255));
+            }
+        }
+    }
 }   // renderPlayerView
 
 

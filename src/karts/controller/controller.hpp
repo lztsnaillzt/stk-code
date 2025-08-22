@@ -113,6 +113,9 @@ public:
      *  (such as player controllers) to display username. */
     virtual core::stringw getName(bool include_handicap_string = true) const;
     // ------------------------------------------------------------------------
+    /** Returns a short debug string to be rendered on screen; default empty. */
+    virtual core::stringw getDebugInfo() const { return core::stringw(); }
+    // ------------------------------------------------------------------------
     /** Returns the kart controlled by this controller. */
     AbstractKart *getKart() const { return m_kart; }
 };   // Controller
