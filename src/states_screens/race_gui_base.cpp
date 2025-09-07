@@ -597,7 +597,7 @@ void RaceGUIBase::renderPlayerView(const Camera *camera, float dt)
             {
                 gui::IGUIFont* font = GUIEngine::getSmallFont();
                 const int margin = 8;
-                core::rect<s32> pos(viewport.UpperLeftCorner.X + margin,
+                core::rect<s32> pos(viewport.UpperLeftCorner.X + 200,
                                      viewport.UpperLeftCorner.Y + margin,
                                      viewport.UpperLeftCorner.X + viewport.getWidth()/2,
                                      viewport.UpperLeftCorner.Y + viewport.getHeight()/2);
